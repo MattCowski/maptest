@@ -1,0 +1,12 @@
+.map-container {
+  height: 400px;
+  width: 100%;
+}
+
+.map-ref {
+  height: 100%;
+}
+
+.btn {
+  font-size: 30px;
+}

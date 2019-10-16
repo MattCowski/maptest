@@ -1,2 +1,0 @@
-# maptest
-Created with CodeSandbox
