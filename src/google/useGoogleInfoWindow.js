@@ -9,6 +9,7 @@ export default function useGoogleMapMarker({
   position,
   type,
   maps,
+  marker,
   map,
   events,
   title,

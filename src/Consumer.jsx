@@ -58,6 +58,7 @@ export default function Consumer({ data }) {
                 console.log(e);
                 // window.alert(`marker ${index} clicked ${m.last_trip}`);
                 setPlaceIndex(index);
+                // setInfoWindowIndex(index)
               }
             }}
             // isLast={m.last_trip}
@@ -68,15 +69,16 @@ export default function Consumer({ data }) {
         className="btn"
         onClick={() => setPlaceIndex((placeIndex + 1) % places.length)}
       >
-        Next place
+        Next coord
       </button>
       <button
         className="btn"
-        onClick={() => setCenter(originalPath[originalPath.length - 1])}
+        // onClick={() => setCenter(originalPath[originalPath.length - 1])}
+        onClick={() => setPlaceIndex(originalPath.length - 1)}
       >
         center at end
       </button>
-      <button className="btn" onClick={() => setCenter(originalPath[0])}>
+      <button className="btn" onClick={() => setPlaceIndex(0)}>
         center at start
       </button>
       <button className="btn" onClick={() => setZoom(14)}>

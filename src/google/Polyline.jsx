@@ -25,7 +25,7 @@ export default function Polyline({
     if (polyline) {
       enabled ? polyline.setMap(map) : polyline.setMap(null);
     }
-  }, [enabled]);
+  });
 
   return null;
 }
